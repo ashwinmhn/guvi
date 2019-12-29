@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<script type="text/javascript" src="game.js"></script>
+
+</head>
+<body>
+
+<h2>One click cricket</h2>
+
+<div class="row">
+  <div  class="column" style="background-color:#aaa;">
+    <h2>Player 1</h2>
+    <p>Score Board</p>
+    
+
+    <p>
+      <h3>Runs</h3>
+      <h3 id="d1"></h3>
+
+      
+      
+
+      <button id="d1" onclick="random()">Play </button>
+      
+
+    </p>  
+  </div>
+
+  <div class="column" style="background-color:#bbb;">
+    <h2>Player 2</h2>
+    <p>Score Board</p>
+
+    
+    <p>
+      <h3>Runs</h3>
+      <h3 id="d2"></h3>
+
+      <button  id="d2" onclick="random2()">Play </button>
+      
+
+    </p>  
+  </div>
+</div>
+
+<div>
+  <p>
+
+    <center><h2>winner</h2></center>
+    <center><h1 id="d3"></h1></center>
+    <center><h2 id="d4"></h2></center>
+    <center><h2 id="d5"></h2></center>
+    <center><h2 id="d6"></h2></center>
+    <center><h2 id="d7"></h2></center>
+    <a href="page2.html"><h1> summary</h1></a>
+
+  </p>
+</div>
+
+
+
+</body>
+</html>
