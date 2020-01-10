@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.score{
+  display: flex;
+}
+
+.column {
+  
+  width: 50%;
+  padding: 10px;
+  height: 700px;
+}
+
+.column2 {
+  
+  width: 50%;
+  padding: 10px;
+  height: 700px; 
+}
+
+.result{
+  /*position: absolute; 
+  left: 800px;
+  top: 80px;
+*/
+  width: 30%;
+  padding: 10px;
+  height: 600px;
+}
+
+.win{
+  display: flex;
+  justify-content: center;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+<center><h1>T1.sumMARY</h1></center>
+<div class="score">
+<div  class="column" style="background-color:#cd84f1;">
+    <h1><strong>Team 1</strong></h1>
+    <h2>Score Board</h2>
+    <h2 id="x1"></h2>
+    <h2 id="x2"></h2>
+    <h2 id="x3"></h2>
+    <h2 id="x4"></h2>
+    <h2 id="x5"></h2>
+    <h2 id="x6"></h2>
+    <h2 id="x7"></h2>
+    <h2 id="x8"></h2>
+    <h2 id="x9"></h2>
+    <h2 id="x10"></h2>
+    <h2>Score</h2>
+    <h2 id="score1"></h2>
+    
+</div>
+
+<div  class="column2" style="background-color:#32ff7e;">
+    <h1><strong>Team 2</strong></h1>
+    <h2>Score Board</h2>
+    <h2 id="y1"></h2>
+    <h2 id="y2"></h2>
+    <h2 id="y3"></h2>
+    <h2 id="y4"></h2>
+    <h2 id="y5"></h2>
+    <h2 id="y6"></h2>
+    <h2 id="y7"></h2>
+    <h2 id="y8"></h2>
+    <h2 id="y9"></h2>
+    <h2 id="y10"></h2>
+    
+    <h2>Score</h2>
+    <h2 id="score2"></h2>
+    
+</div>
+
+<div class="result" style="background-color: #ffeaa7;  ">
+  <span class="win">
+	<h1><strong>Winner</strong></h1></center>
+  <img src="https://www.freepngimg.com/thumb/award/27103-7-award-picture.png" width="50px" height="50px">
+</span>
+	<center><h1 id="win"></h1></center>
+	<!-- <center><h2><strong>Score</strong></h2></center>
+	<center><h1 id="score"></h1></center> -->
+	<center><h2><strong>Won by Runs :</strong></h2></center>
+	<center><h1 id="runs"></h1></center>
+  <center><h2><strong>Man of the match</strong></h2></center>
+  <center><h2 id="Team"></h2></center>
+  <center><h2><strong>Player</strong></h2></center>
+  <center><h2 id="playerm"></h2></center>
+  <center><h2><strong>Score</strong></h2></center>
+  <center><h2 id="highscore"></h2></center>
+
+
+</div>
+</div>
+<script type="text/javascript" src="T1.summary.js"></script>
+</body>
+</html>
+
+
+
+
+
