@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles1.css">
+    
+</head>
+<body>
+    
+
+   <script>
+
+
+    var div=document.createElement('div');
+        div.className="game";
+
+    for(let i=1;i<=12;i++){
+        var div1=document.createElement('div');
+        div1.setAttribute('id',"id" +i);
+        
+        
+        div1.className="card";
+        div.appendChild(div1);
+        document.body.appendChild(div);
+
+        }
+
+        
+
+
+
+    document.getElementById('id1').innerHTML = "<img src='cookie.png' class='front'>"
+    document.getElementById('id1').setAttribute('data-name','cookie');
+    document.getElementById('id2').innerHTML = "<img src='cookie.png' class='front'>"
+    document.getElementById('id2').setAttribute('data-name','cookie');
+    document.getElementById('id3').innerHTML = "<img src='panda.png' class='front'>"
+    document.getElementById('id3').setAttribute('data-name','panda');
+    document.getElementById('id4').innerHTML = "<img src='panda.png' class='front'>"
+    document.getElementById('id4').setAttribute('data-name','panda');
+    document.getElementById('id5').innerHTML = "<img src='nike.png'class='front' >"
+    document.getElementById('id5').setAttribute('data-name','nike');
+    document.getElementById('id6').innerHTML = "<img src='nike.png'class='front' >"
+    document.getElementById('id6').setAttribute('data-name','nike');
+    document.getElementById('id7').innerHTML = "<img src='tomato.png'class='front' >"
+    document.getElementById('id7').setAttribute('data-name','tomato');
+    document.getElementById('id8').innerHTML = "<img src='tomato.png'class='front'>"
+    document.getElementById('id8').setAttribute('data-name','tomato');
+    document.getElementById('id9').innerHTML = "<img src='pop.png'class='front'>"
+    document.getElementById('id9').setAttribute('data-name','pop');
+    document.getElementById('id10').innerHTML = "<img src='pop.png'class='front'>"
+    document.getElementById('id10').setAttribute('data-name','pop');
+    document.getElementById('id11').innerHTML = "<img src='diamond.png'class='front'>"
+    document.getElementById('id11').setAttribute('data-name','diamond');
+    document.getElementById('id12').innerHTML = "<img src='diamond.png'class='front'>"
+    document.getElementById('id12').setAttribute('data-name','diamond');
+    
+    
+    
+
+
+
+
+const cards =document.querySelectorAll('.card');
+
+
+let flippedcard=false;
+let firstcard,secondcard;
+
+function fliper(){
+
+    console.log("clicked");
+    console.log(this);
+    this.classList.toggle('flip');
+
+    if(!flippedcard){
+        flippedcard=true;
+        firstcard=this;
+    }
+
+    else
+    {
+        flippedcard=false;
+        secondcard=this;
+
+
+
+
+        if(firstcard.dataset.name===secondcard.dataset.name){
+
+       firstcard.removeEventListener('click','flip');
+       secondcard.removeEventListener('click','flip');}
+
+
+
+        else{
+
+
+        setTimeout(()=>{
+        firstcard.classList.remove('flip');
+        secondcard.classList.remove('flip');
+
+        },1200);}
+    }
+    
+}
+
+
+
+
+
+
+cards.forEach(card => card.addEventListener('click', fliper));
+
+
+
+
+    
+    
+    
+    </script> 
+</body>
+</html>
